@@ -8,8 +8,9 @@ const Header = () => {
     const menuItem =<>
     
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/inventory">Inventory</Link></li>
-                <li><Link to="/about">About</Link></li>
+           
+                <li><Link to="/blog">Blog</Link></li>
+
                 {
                    user?.uid ?
                         <button className='btn-logout' onClick={logOut}>Log out</button>
@@ -33,7 +34,7 @@ const Header = () => {
            {menuItem}
             </ul>
           </div>
-          <a href='/' className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a href='/' className="btn btn-ghost normal-case text-xl">Old Is Gold</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">

@@ -8,7 +8,7 @@ const PrivateRoute = ({children}) => {
 
     if(loading){
         console.log('yes loading found');
-        return <div>Loading...</div>
+        return <progress className="progress w-56"></progress>
     }
 
     if(user && user.uid) {
