@@ -29,20 +29,22 @@ const Login = () => {
     }
 
     return (
-        <div className='form-container'>
-            <h2 className='form-title'>Login</h2>
+        <div className='form-container bg-slate-500 '>
+            <h2 className='form-title text-white'>Login</h2>
             <form onSubmit={handleSubmit}>
-                <div className="form-control">
+                <div className="form-control text-white">
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" required />
                 </div>
-                <div className="form-control">
+                <div className="form-control text-white">
                     <label htmlFor="password">Password</label>
                     <input type="password" name="password" required />
                 </div>
-                <input className='btn-submit' type="submit" value="Login" />
+                <input className='btn-submit text-white' type="submit" value="Login" />
+                
             </form>
-            <p>New to ema john <Link to='/signup'>Create a New Account</Link></p>
+            <input className='btn-submit text-white' type="submit" value="Login with google" />
+            <p className='text-white'>New to old is gold <Link to='/signup'>Create a New Account</Link></p>
         </div>
     );
 };
