@@ -4,7 +4,7 @@ import CategoryPart from './CategoryPart';
 const Category = () => {
     const [category,setCategory]=useState([])
     useEffect(()=>{
-        fetch('products.json')
+        fetch('http://localhost:5000/categories')
         .then(res =>res.json())
         .then(data =>setCategory(data))
     },[])

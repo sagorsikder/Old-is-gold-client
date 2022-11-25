@@ -1,6 +1,6 @@
 [
   {
-  
+    "_id":1,
     "category": "yamaha",
     "details": "Yamaha is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/R.7d52479f33adb77882c46a5ac605faf0?rik=4iL5VDwkqmcRUw&pid=ImgRaw&r=0",
@@ -8,7 +8,7 @@
    
   },
   {
-  
+    "_id":2,
     "category": "Hero",
     "details": "Hero is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/R.dc0d841b7dcba9effe3e1c70adb8e6bf?rik=ndvf6B%2bRWv%2bWJw&pid=ImgRaw&r=0",
@@ -16,7 +16,7 @@
    
   },
   {
-  
+    "_id":3,
     "category": "Bajaj",
     "details": "Bajaj is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/OIP.xvkJCFyDE--5MBwboUjyXgHaE0?pid=ImgDet&rs=1",
