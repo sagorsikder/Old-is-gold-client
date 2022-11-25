@@ -4,7 +4,7 @@
     "category": "yamaha",
     "details": "Yamaha is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/R.7d52479f33adb77882c46a5ac605faf0?rik=4iL5VDwkqmcRUw&pid=ImgRaw&r=0",
-    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg"},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0"}]
+    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2}]
    
   },
   {
@@ -12,7 +12,7 @@
     "category": "Hero",
     "details": "Hero is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/R.dc0d841b7dcba9effe3e1c70adb8e6bf?rik=ndvf6B%2bRWv%2bWJw&pid=ImgRaw&r=0",
-    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg"},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0"}]
+    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2}]
    
   },
   {
@@ -20,7 +20,7 @@
     "category": "Bajaj",
     "details": "Bajaj is the best brand in the world.We provide this bike with small money",
     "categoryImg" :"https://th.bing.com/th/id/OIP.xvkJCFyDE--5MBwboUjyXgHaE0?pid=ImgDet&rs=1",
-    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg"},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0"}]
+    "products":[{"name":"Yamaha Fazar","img":"https://motoyard.ro/wp-content/uploads/2020/02/IMG_2504.jpeg","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2},{"name":"Yamaha Fz","img":"https://th.bing.com/th/id/R.2dae1d298c0762bb72e1afe90eea0338?rik=inJLS6LuiPe6DQ&pid=ImgRaw&r=0","location":"Dhaka","resalePrice":180000,"orginalPrice":250000,"seller":"Fahim rimon","used":2}]
    
   }
 ]
