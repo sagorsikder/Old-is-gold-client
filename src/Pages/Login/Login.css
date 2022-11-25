@@ -1,6 +1,5 @@
 .form-container {
-    width: 500px;
-    height: 600px;
+ 
     margin: 20px auto;
     border: 1px solid #95A0A7;
     border-radius: 8px;
@@ -31,8 +30,8 @@
 }
 
 .form-control input {
-    width: 415px;
-    height: 55px;
+    width: 350px;
+    height: 45px;
     border: 1px solid #95A0A7;
     border-radius: 5px;
     font-size: 1.5em;
@@ -40,8 +39,8 @@
 }
 
 .btn-submit {
-    width: 415px;
-    height: 55px;
+    width: 350px;
+    height: 45px;
     margin-top: 45px;
     background: rgba(255, 153, 0, 0.3);
     border-radius: 5px;
