@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../../Utilities/Modal';
 
 const ProductCard = ({product}) => {
     const {img,name,location,orginalPrice,resalePrice,used,seller} = product;
@@ -14,8 +15,12 @@ const ProductCard = ({product}) => {
     
     <p>Location : {location}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      
+    <label htmlFor="booking-modal" className="btn">open modal</label>
+   
+
     </div>
+    <Modal product={product}></Modal>
   </div>
 </div>
     );
