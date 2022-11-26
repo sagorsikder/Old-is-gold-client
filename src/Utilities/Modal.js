@@ -29,6 +29,7 @@ const Modal = ({product}) => {
       }
 
       console.log(order)
+      form.reset()
       alert('order successfully')
 
     }
@@ -50,14 +51,14 @@ const Modal = ({product}) => {
   <label className="label">
     <span className="label-text">Name</span>
   </label>
-  <input type="text" name='name' placeholder="Name " className="input input-bordered w-full " />
+  <input type="text" defaultValue={user?.displayName} name='name' placeholder="Name " className="input input-bordered w-full " />
  
 </div>
     <div className="form-control w-full ">
   <label className="label">
     <span className="label-text">Email</span>
   </label>
-  <input type="text" name='email' defaultValue={email} disabled className="input input-bordered w-full " />
+  <input type="text" name='email' defaultValue={user?.email} disabled className="input input-bordered w-full " />
  
 </div>
     <div className="form-control w-full ">
