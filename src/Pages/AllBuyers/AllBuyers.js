@@ -1,9 +1,37 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const AllBuyers = () => {
+    const users = useLoaderData()
     return (
         <div>
-              <h1 className='text-center my-7'>All Buyer page</h1>
+             <div className="overflow-x-auto">
+  <table className="table w-full">
+  
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Favorite Color</th>
+        <th>Favorite Color</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+   {
+
+    users.map((user,i)=> <tr>
+        <th>{i+1}</th>
+        <td>{user.name}</td>
+        <td>{user.email}</td>
+        <td>Blue</td>
+        <td>Blue</td>
+      </tr>)
+   }
+    </tbody>
+  </table>
+</div>
         </div>
     );
 };

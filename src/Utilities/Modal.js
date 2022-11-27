@@ -24,9 +24,21 @@ const Modal = ({product}) => {
         email,
         product,
         price,
+        img,
         location,
         phone
       }
+
+      fetch('http://localhost:5000/order',{
+        method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify(order)
+
+    })
+    .then(res => res.json())
+    .then(data =>{
+        console.log('saved order',data);
+    })
 
       console.log(order)
       form.reset()
