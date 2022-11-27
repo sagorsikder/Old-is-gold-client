@@ -31,10 +31,10 @@ const DashboardMain = () => {
          {
 
             currentUser?.role==='admin'?<> <li><Link to='/dashboard/myseller'>All Sellers</Link></li>
-            <li><Link to='/dashboard/allbuyers'>All Buyers</Link></li></>:<> <li><Link to='/dashboard/myorder'>My Orders</Link></li>
+            <li><Link to='/dashboard/allbuyers'>All Buyers</Link></li></>:currentUser?.role==='Seller'?<>
             <li><Link to='/dashboard/addproduct'>Add Product</Link></li>
             <li><Link to='/dashboard/myproduct'>My Product</Link></li>
-            <li><Link to='/dashboard/mybuyers'>My Buyers</Link></li></>
+            <li><Link to='/dashboard/mybuyers'>My Buyers</Link></li></>: <li><Link to='/dashboard/myorder'>My Orders</Link></li>
                  
          }
           </ul>

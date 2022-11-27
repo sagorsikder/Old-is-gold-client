@@ -72,7 +72,8 @@ const router = createBrowserRouter([
         },
         {
           path:'/dashboard/myseller',
-          element:<MySellers></MySellers>
+          element:<MySellers></MySellers>,
+          loader:()=>fetch('http://localhost:5000/users')
         },
         {
           path:'/dashboard/mybuyers',

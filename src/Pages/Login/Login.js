@@ -51,10 +51,7 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
 
 
-            <select className="select form-control my-5 text-2xl select-bordered w-full ">
-            <option  selected>User</option>
-            <option>Seller</option>
-            </select>
+         
 
                 <div className="form-control">
                     <label htmlFor="email">Email</label>

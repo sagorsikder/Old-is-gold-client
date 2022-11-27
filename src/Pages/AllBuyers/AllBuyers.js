@@ -3,10 +3,11 @@ import { useLoaderData } from 'react-router-dom';
 
 const AllBuyers = () => {
     const loadUsers = useLoaderData()
-    const users = loadUsers.filter(user=>user?.role !== 'admin')
+    const users = loadUsers.filter(user=>user?.role !== 'admin' && user?.role !== 'Seller')
 
     return (
         <div>
+            <h1 className='text-3xl font-semibold my-7'>All Buyers</h1>
              <div className="overflow-x-auto">
   <table className="table w-full">
   
@@ -15,8 +16,7 @@ const AllBuyers = () => {
         <th></th>
         <th>Name</th>
         <th>Email</th>
-        <th>Favorite Color</th>
-        <th>Favorite Color</th>
+        <th>Remove </th>
       </tr>
     </thead>
     <tbody>
@@ -27,13 +27,13 @@ const AllBuyers = () => {
         <th>{i+1}</th>
         <td>{user.name}</td>
         <td>{user.email}</td>
-        <td>Blue</td>
-        <td>Blue</td>
+       
+        <td><button className='btn btn-warning'>delete</button></td>
       </tr>)
    }
     </tbody>
-  </table>
-</div>
+    </table>
+    </div>
         </div>
     );
 };

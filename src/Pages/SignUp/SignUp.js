@@ -13,6 +13,7 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
+        const select = form.select.value;
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
@@ -33,15 +34,15 @@ const SignUp = () => {
                 const user = result.user;
                 console.log(user);
                 form.reset();
-                savedUser(name,email)
+                savedUser(name,email,select)
                 navigate('/')
             })
             .catch(error => console.error(error));
 
     }
 
-    const savedUser = (name,email)=>{
-        const user = {name,email};
+    const savedUser = (name,email,select)=>{
+        const user = {name,email,role:select};
         fetch('http://localhost:5000/users',{
             method:'POST',
             headers:{'content-type':'application/json'},
@@ -58,6 +59,14 @@ const SignUp = () => {
         <div className='form-container  max-w-[400px] py-7 max-h-[600px] bg-slate-500'>
             <h2 className='form-title'>Sign Up</h2>
             <form onSubmit={handleSubmit}>
+
+
+            <select name='select' className="select form-control my-5 text-2xl select-bordered w-full ">
+            <option  selected>Buyer</option>
+            <option>Seller</option>
+            </select>
+
+
                 <div className="form-control">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" required />
