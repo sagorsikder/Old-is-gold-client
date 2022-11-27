@@ -13,17 +13,18 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
         const confirm = form.confirm.value;
 
         if (password.length < 6) {
-            setError('Password should be 6 characters or more.');
+            setError('Password should be at least 6 characters.');
             return;
         }
 
         if (password !== confirm) {
-            setError('Your Password did not match');
+            setError('Password did not match');
             return;
         }
 
@@ -32,16 +33,35 @@ const SignUp = () => {
                 const user = result.user;
                 console.log(user);
                 form.reset();
+                savedUser(name,email)
                 navigate('/')
             })
             .catch(error => console.error(error));
 
     }
 
+    const savedUser = (name,email)=>{
+        const user = {name,email};
+        fetch('http://localhost:5000/users',{
+            method:'POST',
+            headers:{'content-type':'application/json'},
+            body:JSON.stringify(user)
+
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log('saved user',data);
+        })
+    }
+
     return (
         <div className='form-container  max-w-[400px] py-7 max-h-[600px] bg-slate-500'>
             <h2 className='form-title'>Sign Up</h2>
             <form onSubmit={handleSubmit}>
+                <div className="form-control">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" required />
+                </div>
                 <div className="form-control">
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" required />

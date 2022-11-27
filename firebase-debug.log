@@ -1,0 +1,25 @@
+[debug] [2022-11-26T20:59:08.556Z] ----------------------------------------------------------------------
+[debug] [2022-11-26T20:59:08.578Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-26T20:59:08.583Z] CLI Version:   11.16.0
+[debug] [2022-11-26T20:59:08.585Z] Platform:      win32
+[debug] [2022-11-26T20:59:08.586Z] Node Version:  v18.2.0
+[debug] [2022-11-26T20:59:08.592Z] Time:          Sun Nov 27 2022 02:59:08 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-11-26T20:59:08.595Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-26T20:59:09.354Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-26T20:59:09.357Z] > authorizing via signed-in user (mdsagorsikder97@gmail.com)
+[debug] [2022-11-26T20:59:09.358Z] [iam] checking project old-is-gold-6eb1b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-26T20:59:09.375Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/old-is-gold-6eb1b:testIamPermissions [none]
+[debug] [2022-11-26T20:59:09.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/old-is-gold-6eb1b:testIamPermissions x-goog-quota-user=projects/old-is-gold-6eb1b
+[debug] [2022-11-26T20:59:09.379Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/old-is-gold-6eb1b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-26T20:59:11.714Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/old-is-gold-6eb1b:testIamPermissions 200
+[debug] [2022-11-26T20:59:11.717Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/old-is-gold-6eb1b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-26T20:59:11.730Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/old-is-gold-6eb1b [none]
+[debug] [2022-11-26T20:59:12.658Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/old-is-gold-6eb1b 200
+[debug] [2022-11-26T20:59:12.661Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/old-is-gold-6eb1b {"projectId":"old-is-gold-6eb1b","projectNumber":"1030412796849","displayName":"old-is-gold","name":"projects/old-is-gold-6eb1b","resources":{"hostingSite":"old-is-gold-6eb1b"},"state":"ACTIVE","etag":"1_b3cd4e10-3ba1-468a-ba56-edded1de0d40"}
+[info] 
+[info] === Deploying to 'old-is-gold-6eb1b'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-11-26T20:59:12.906Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/old-is-gold-6eb1b/versions [none]
+[debug] [2022-11-26T20:59:12.907Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/old-is-gold-6eb1b/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
