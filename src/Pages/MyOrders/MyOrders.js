@@ -1,9 +1,14 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../../contexts/UserContext';
 
 const MyOrders = () => {
-    const orders = useLoaderData()
-    console.log('orders',orders)
+    
+    const {user} = useContext(AuthContext)
+    const [orders,setOrders] = useState([])
+
+    fetch(`http://localhost:5000/order?email=${user.email}`)
+    .then(res=>res.json())
+    .then(data=>setOrders(data))
     return (
         <div>
             <h1 className='text-3xl font-semibold text-center my-7'>My Orders</h1>

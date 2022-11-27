@@ -2,7 +2,9 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const AllBuyers = () => {
-    const users = useLoaderData()
+    const loadUsers = useLoaderData()
+    const users = loadUsers.filter(user=>user?.role !== 'admin')
+
     return (
         <div>
              <div className="overflow-x-auto">

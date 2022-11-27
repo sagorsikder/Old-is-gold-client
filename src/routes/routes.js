@@ -17,6 +17,7 @@ import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
+  
     {
         path:'/',
         element: <Main></Main>,
@@ -59,8 +60,7 @@ const router = createBrowserRouter([
        {
 
         path:'/dashboard/myorder',
-        element:<MyOrders></MyOrders>,
-        loader:()=>fetch('http://localhost:5000/order')
+        element:<MyOrders></MyOrders>
         },
         {
           path:'/dashboard/addproduct',
