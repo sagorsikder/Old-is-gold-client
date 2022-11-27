@@ -56,7 +56,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className='form-container  max-w-[400px] py-7 max-h-[600px] bg-slate-500'>
+        <div className='form-container  max-w-[400px] py-7 max-h-[800px] bg-slate-500'>
             <h2 className='form-title'>Sign Up</h2>
             <form onSubmit={handleSubmit}>
 
