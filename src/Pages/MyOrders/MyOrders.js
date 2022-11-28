@@ -6,7 +6,7 @@ const MyOrders = () => {
     const {user} = useContext(AuthContext)
     const [orders,setOrders] = useState([])
 
-    fetch(`http://localhost:5000/order?email=${user.email}`)
+    fetch(`https://old-is-gold-server.vercel.app/order?email=${user.email}`)
     .then(res=>res.json())
     .then(data=>setOrders(data))
     return (

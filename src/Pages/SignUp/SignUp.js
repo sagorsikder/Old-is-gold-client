@@ -43,7 +43,7 @@ const SignUp = () => {
 
     const savedUser = (name,email,select)=>{
         const user = {name,email,role:select};
-        fetch('http://localhost:5000/users',{
+        fetch('https://old-is-gold-server.vercel.app/users',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(user)

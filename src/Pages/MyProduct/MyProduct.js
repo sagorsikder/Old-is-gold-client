@@ -7,7 +7,7 @@ const MyProduct = () => {
 
     const {user} = useContext(AuthContext)
 
-    fetch(`http://localhost:5000/myproduct?email=${user.email}`)
+    fetch(`https://old-is-gold-server.vercel.app/myproduct?email=${user.email}`)
   
     .then(res=>res.json())
     .then(data=>{

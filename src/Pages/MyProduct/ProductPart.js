@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ProductPart = ({product}) => {
+
   const {name,img,price,location,description,condition} = product;
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -12,7 +13,9 @@ const ProductPart = ({product}) => {
           <p>{location}</p>
           <p>{condition}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+           
+            <button className="btn btn-primary">Advertise</button>
+            
           </div>
         </div>
       </div>

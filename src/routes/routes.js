@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             {
                 path:'/product/:id',
                 element:<PrivateRoute><Product></Product></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/product?id=${params.id}`)
+                loader:({params})=>fetch(`https://old-is-gold-server.vercel.app/product?id=${params.id}`)
             },
      
        
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         {
           path:'/dashboard/myseller',
           element:<MySellers></MySellers>,
-          loader:()=>fetch('http://localhost:5000/users')
+          loader:()=>fetch('https://old-is-gold-server.vercel.app/users')
         },
         {
           path:'/dashboard/mybuyers',
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
         {
           path:'/dashboard/allbuyers',
           element:<AllBuyers></AllBuyers>,
-          loader:()=>fetch('http://localhost:5000/users')
+          loader:()=>fetch('https://old-is-gold-server.vercel.app/users')
         }
       ]
 

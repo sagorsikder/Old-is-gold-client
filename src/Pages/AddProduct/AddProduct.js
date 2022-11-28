@@ -36,7 +36,7 @@ const AddProduct = () => {
             year
         }
 
-        fetch('http://localhost:5000/newproduct',{
+        fetch('https://old-is-gold-server.vercel.app/newproduct',{
         method:'POST',
         headers:{'content-type':'application/json'},
         body:JSON.stringify(product)

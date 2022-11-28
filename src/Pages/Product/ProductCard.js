@@ -1,8 +1,11 @@
 import React from 'react';
+
 import Modal from '../../Utilities/Modal';
 
 const ProductCard = ({product}) => {
     const {img,name,location,orginalPrice,resalePrice,used,seller} = product;
+
+   
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src={img} alt="Shoes" /></figure>
@@ -16,9 +19,8 @@ const ProductCard = ({product}) => {
     <p>Location : {location}</p>
     <div className="card-actions justify-end">
       
-    <label htmlFor="booking-modal" className="btn">Book Now</label>
+     <label htmlFor="booking-modal" className="btn">Book Now</label>
    
-
     </div>
     <Modal product={product}></Modal>
   </div>

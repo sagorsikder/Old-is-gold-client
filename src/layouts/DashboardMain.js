@@ -8,7 +8,7 @@ const DashboardMain = () => {
     const [currentUser,setCurrentUser] = useState(null)
     
     const {user} = useContext(AuthContext)
-    fetch(`http://localhost:5000/user?email=${user.email}`)
+    fetch(`https://old-is-gold-server.vercel.app/user?email=${user.email}`)
     .then(res => res.json())
     .then(data =>setCurrentUser(data))
     return (
