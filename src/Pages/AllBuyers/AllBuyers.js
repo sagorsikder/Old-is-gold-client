@@ -5,6 +5,16 @@ const AllBuyers = () => {
     const loadUsers = useLoaderData()
     const users = loadUsers.filter(user=>user?.role !== 'admin' && user?.role !== 'Seller')
 
+    const handleDelete =(email)=>{
+      
+
+
+      fetch(`https://old-is-gold-server.vercel.app/seller?email=${email}`)
+     
+
+   
+    }
+
     return (
         <div>
             <h1 className='text-3xl font-semibold my-7'>All Buyers</h1>
@@ -28,7 +38,7 @@ const AllBuyers = () => {
         <td>{user.name}</td>
         <td>{user.email}</td>
        
-        <td><button className='btn btn-warning'>delete</button></td>
+        <td><button onClick={()=>handleDelete(user.email)}  className='btn btn-warning'>delete</button></td>
       </tr>)
    }
     </tbody>
