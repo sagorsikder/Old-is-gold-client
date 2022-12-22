@@ -7,17 +7,17 @@ const Header = () => {
     const { user, logOut } = useContext(AuthContext)
     const menuItem =<>
     
-    <li><Link to="/">Home</Link></li>
+    <li className='font-semibold'><Link to="/">Home</Link></li>
            
-                <li><Link to="/blog">Blog</Link></li>
+                <li className='font-semibold'><Link to="/blog">Blog</Link></li>
 
                 {
                    user?.uid ?
-                        <button className='btn-logout' onClick={logOut}>Log out</button>
+                        <button className='btn-logout  font-semibold' onClick={logOut}>Log out</button>
                         :
                          <>
-                           <li> <Link to="/login">Login</Link></li>
-                            <li> <Link to="/signup">Sign up</Link></li>
+                           <li className='font-semibold'> <Link to="/login">Login</Link></li>
+                            <li className='font-semibold'> <Link to="/signup">Sign up</Link></li>
                         </>
                  }
     
