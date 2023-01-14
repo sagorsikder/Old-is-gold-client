@@ -33,7 +33,8 @@ const AddProduct = () => {
             location,
             category,
             description,
-            year
+            year,
+            advertise:'no'
         }
 
         fetch('https://old-is-gold-server.vercel.app/newproduct',{

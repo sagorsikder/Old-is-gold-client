@@ -14,7 +14,7 @@ const ProductPart = ({product,handleDelete}) => {
           <p>{condition}</p>
           <div className="card-actions justify-end">
            
-            <button onClick={()=>handleDelete(_id)} className="btn btn-primary">Advertise</button>
+            <button onClick={()=>handleDelete(_id)} className="btn btn-primary">Hide</button>
             
           </div>
         </div>
