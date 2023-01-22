@@ -42,7 +42,7 @@ const Advertisement = () => {
 
     return (
         <div>
-              <h1 className='text-center text-3xl font-semibold my-7'>Advertisement</h1>
+              <h1 className='text-blue-600 text-center font-semibold text-5xl  my-7'>Advertisement</h1>
              {
                 products? <div className='w-3/4 mx-auto grid lg:grid-cols-2 sm:grid-cols-1'>
                 {

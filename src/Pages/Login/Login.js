@@ -46,26 +46,28 @@ const Login = () => {
     }
 
     return (
-        <div className='form-container max-w-[400px] py-7 max-h-[800px] bg-slate-500 '>
-            <h2 className='form-title'>Login</h2>
+        <div className='form-container max-w-[600px] py-7 max-h-[800px] bg-slate-500 '>
+            <div className='mx-auto w-[360px]'>
+            <h2 className=' text-white form-title'>Login</h2>
             <form onSubmit={handleSubmit}>
 
 
          
 
                 <div className="form-control">
-                    <label htmlFor="email">Email</label>
+                    <label className=' text-white' htmlFor="email">Email</label>
                     <input type="email" name="email" required />
                 </div>
                 <div className="form-control ">
-                    <label htmlFor="password">Password</label>
+                    <label className=' text-white' htmlFor="password">Password</label>
                     <input type="password" name="password" required />
                 </div>
-                <input className='btn-submit ' type="submit" value="Login" />
+                <input className='btn-submit text-white ' type="submit" value="Login" />
                 
             </form>
-            <input onClick={googleLogin} className='btn-submit ' type="submit" value="Login with google" />
-            <p className='text-white'>New to old is gold <Link to='/signup'>Create a New Account</Link></p>
+            <input onClick={googleLogin} className='btn-submit text-white' type="submit" value="Login with google" />
+            <p className='text-white mt-2'>New to old is gold? <Link className='text-blue-800' to='/signup'>Create a New Account</Link></p>
+            </div>
         </div>
     );
 };

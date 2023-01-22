@@ -11,7 +11,6 @@
     font-size: 35px;
     line-height: 42px;
     letter-spacing: 0.0025em;
-    color: #2A414F;
     text-align: center;
 }
 
@@ -26,7 +25,6 @@
     line-height: 20px;
     letter-spacing: 0.0015em;
     margin-bottom: 10px;
-    color: #2A414F;
 }
 
 .form-control input {
@@ -36,6 +34,7 @@
     border-radius: 5px;
     font-size: 1.5em;
     padding-left: 10px;
+    color: black;
 }
 
 .btn-submit {
@@ -48,7 +47,6 @@
     font-size: 21px;
     line-height: 25px;
     letter-spacing: 0.0015em;
-    color: #0E161A;
     border: none;
     padding-left: 10px;
 }

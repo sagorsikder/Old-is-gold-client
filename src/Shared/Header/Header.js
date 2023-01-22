@@ -10,6 +10,7 @@ const Header = () => {
     <li className='font-semibold'><Link to="/">Home</Link></li>
            
                 <li className='font-semibold'><Link to="/blog">Blog</Link></li>
+                <li className='font-semibold'><Link to="/about">About</Link></li>
 
                 {
                    user?.uid ?

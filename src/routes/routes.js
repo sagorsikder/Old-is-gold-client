@@ -5,6 +5,7 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
 import AllBuyers from "../Pages/AllBuyers/AllBuyers";
 import Blog from "../Pages/Blog/Blog";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import About from "../Pages/Home/About/About";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import MyBuyers from "../Pages/MyBuyers/MyBuyers";
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
           {
             path:'/blog',
             element:<Blog></Blog>
+          },
+          {
+            path:'/about',
+            element:<About></About>
           },
           {
             path:'/*',

@@ -56,12 +56,13 @@ const SignUp = () => {
     }
 
     return (
-        <div className='form-container  max-w-[400px] py-7 max-h-[800px] bg-slate-500'>
+        <div className='form-container  max-w-[600px] py-7 max-h-[800px] bg-slate-500'>
+            <div className='mx-auto w-[360px] text-white'>
             <h2 className='form-title'>Sign Up</h2>
             <form onSubmit={handleSubmit}>
 
 
-            <select name='select' className="select form-control my-5 text-2xl select-bordered w-full ">
+            <select name='select' className="select form-control text-black my-5 text-2xl select-bordered w-full ">
             <option  selected>Buyer</option>
             <option>Seller</option>
             </select>
@@ -85,8 +86,9 @@ const SignUp = () => {
                 </div>
                 <input className='btn-submit' type="submit" value="Sign Up" />
             </form>
-            <p>Already Have an Account <Link to='/login'>Login</Link></p>
+            <p>Already Have an Account? <Link className='text-blue-800' to='/login'>Login</Link></p>
             <p className='text-error'>{error}</p>
+            </div>
         </div>
     );
 };
