@@ -2,7 +2,7 @@ Website Name : Old is gold
 Website link: https://old-is-gold-6eb1b.web.app/
 
 Objective: 
-I was build this website for buy and sell second-hand bike easily.If you buy or sell any bike ,first of all create a account in our website,then access for buy or sell any second hand bike. 
+I was build this website for buy and sell second-hand bike easily.If you buy or sell any bike ,first of all create a account in our website,then access for buy or sell any second hand bike.Here buyer, seller and admin play different role.
 
 Tools:
 1.Html
